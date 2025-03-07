@@ -9,6 +9,7 @@ import NoPage from './pages/NoPage'
 import { AppStateProvider } from './state/AppProvider'
 
 import './index.css'
+import Contoso from './assets/Contoso.svg'
 
 initializeIcons("https://res.cdn.office.net/files/fabric-cdn-prod_20241209.001/assets/icons/")
 
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
+        <img src={Contoso} className="home-graphic" alt="Home Graphic" />
       </HashRouter>
     </AppStateProvider>
   )
